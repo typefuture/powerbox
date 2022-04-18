@@ -16,3 +16,8 @@ wget https://github.com/sharkdp/fd/releases/download/v8.3.2/fd-v8.3.2-x86_64-unk
     && tar -xzf fd-v8.3.2-x86_64-unknown-linux-musl.tar.gz \
     && cp fd-v8.3.2-x86_64-unknown-linux-musl/fd ./opt/ \
     && rm -rf fd-v8.3.2-x86_64-unknown-linux-musl*
+
+wget https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 \
+    && cp jq-linux64 ./opt/jq \
+    && chmod +x ./opt/jq \
+    && rm -rf jq-linux64
