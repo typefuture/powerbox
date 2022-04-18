@@ -15,10 +15,10 @@ I add the following function in `~/.zshrc` to avoid unnecessary typings:
 
 ```sh
 function d() {
-    docker run -v ${PWD}:/app ghcr.io/typefuture/powerbox:master $@
+    docker run -v ${PWD}:/app --network host ghcr.io/typefuture/powerbox:master $@
 }
 function dc() {
-    docker run -v ${PWD}:/app ghcr.io/typefuture/powerbox:master -c "$@"
+    docker run -v ${PWD}:/app --network host ghcr.io/typefuture/powerbox:master -c "$@"
 }
 ```
 
