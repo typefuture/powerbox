@@ -10,6 +10,7 @@ Tools:
 - bat: `docker run -v ${PWD}:/app ghcr.io/typefuture/powerbox:master bat ARGS`
 - fd: `docker run -v ${PWD}:/app ghcr.io/typefuture/powerbox:master fd ARGS`
 - jq: `docker run -v ${PWD}:/app ghcr.io/typefuture/powerbox:master jq ARGS`
+- broot: `docker run -v ${PWD}:/app ghcr.io/typefuture/powerbox:master broot`
 
 I add the following function in `~/.zshrc` to avoid unnecessary typings:
 
