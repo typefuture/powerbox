@@ -1,6 +1,8 @@
 FROM alpine
 
-RUN apk add --update curl broot && \
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
+
+RUN apk add --update curl && \
     rm -rf /var/cache/apk/*
 
 COPY ./opt/* /usr/local/bin/
