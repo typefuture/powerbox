@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add --update curl && \
+RUN apk add --update curl broot && \
     rm -rf /var/cache/apk/*
 
 COPY ./opt/* /usr/local/bin/

@@ -21,7 +21,3 @@ set -x
     && cp jq-linux64 ./opt/jq \
     && chmod +x ./opt/jq \
     && rm -rf jq-linux64
-
-[ ! -f ./opt/broot ] && wget https://dystroy.org/broot/download/x86_64-unknown-linux-musl/broot \
-    && cp broot ./opt/broot \
-    && chmod +x ./opt/broot
